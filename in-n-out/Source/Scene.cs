@@ -1,8 +1,8 @@
-﻿using in_n_out.Scenes;
+﻿using Game1.Source;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace in_n_out.Scenes
+namespace Game1.Source
 {
     interface Scene
     {
