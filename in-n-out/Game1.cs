@@ -1,16 +1,25 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Game1.Source;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
-namespace in_n_out
+namespace Game1
 {
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class Game1 : Game
+    public partial class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        Scene menuScene;
+        Scene levelScene;
+        Scene escOverlayScene;
+        Scene loadingScene;
+
+        Scene currentScene;
 
         public Game1()
         {
@@ -26,7 +35,8 @@ namespace in_n_out
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            menuScene = new MainMenuScene();
+            currentScene = menuScene;
 
             base.Initialize();
         }
@@ -39,6 +49,15 @@ namespace in_n_out
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            var gameComponents = new GameComponents
+            {
+                graphics = graphics,
+                spriteBatch = spriteBatch
+            };
+
+            menuScene.Load(gameComponents);
+
 
             // TODO: use this.Content to load your game content here
         }
@@ -63,6 +82,8 @@ namespace in_n_out
                 Exit();
 
             // TODO: Add your update logic here
+            currentScene.Update(gameTime);
+
 
             base.Update(gameTime);
         }
@@ -75,7 +96,8 @@ namespace in_n_out
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            currentScene.Draw(gameTime);
+
 
             base.Draw(gameTime);
         }
