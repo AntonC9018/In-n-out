@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Game1.Source
+namespace in_n_out.Scenes
 {
     struct GameComponents
     {
