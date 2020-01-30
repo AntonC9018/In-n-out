@@ -41,7 +41,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Innout.cs" />
+    <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\GameComponents.cs" />
@@ -56,11 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\texture2d\item.png" />
-    <Content Include="Content\texture2d\mainchar.png" />
-    <Content Include="Content\texture2d\one.png" />
-    <Content Include="Content\texture2d\three.png" />
-    <Content Include="Content\texture2d\two.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>

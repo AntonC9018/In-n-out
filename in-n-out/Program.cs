@@ -14,7 +14,7 @@ namespace in_n_out
         [STAThread]
         static void Main()
         {
-            using (var game = new Innout())
+            using (var game = new Game1())
                 game.Run();
         }
     }

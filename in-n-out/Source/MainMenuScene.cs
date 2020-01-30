@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
-namespace in_n_out.Scenes
+namespace Game1.Source
 {
     class MainMenuScene : Scene
     {

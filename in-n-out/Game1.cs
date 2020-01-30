@@ -1,15 +1,15 @@
-﻿using in_n_out.Scenes;
+﻿using Game1.Source;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 
-namespace in_n_out
+namespace Game1
 {
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public partial class Innout : Game
+    public partial class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -21,7 +21,7 @@ namespace in_n_out
 
         Scene currentScene;
 
-        public Innout()
+        public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
