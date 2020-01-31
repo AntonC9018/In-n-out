@@ -22,13 +22,13 @@ namespace Innout.Source.Lib
         }
     }
 
-    class EventWrapper
+    class Event
     {
         List<Handler> toRemove;
         List<Handler> toAdd;
         List<Handler> handlers;
 
-        public EventWrapper()
+        public Event()
         {
             toRemove = new List<Handler>();
             toAdd = new List<Handler>();
@@ -64,15 +64,15 @@ namespace Innout.Source.Lib
 
     class Emitter
     {
-        IDictionary<string, EventWrapper> events;
+        IDictionary<string, Event> events;
         public Emitter()
         {
-            events = new Dictionary<string, EventWrapper>();
+            events = new Dictionary<string, Event>();
         }
 
         public void RegisterEvent(string Name)
         {
-            var ev = new EventWrapper();
+            var ev = new Event();
             events.Add(Name, ev);
         }
 
@@ -93,7 +93,19 @@ namespace Innout.Source.Lib
                 Console.WriteLine("No " + Name + " event found registered");
                 return;
             }
-            events[Name].AddHandler(handler);
+            events[Name].RemoveHandler(handler);
         }
+
+        public void Notify(string Name, HandlerParams hp)
+        {
+            if (!events.ContainsKey(Name))
+            {
+                Console.WriteLine("No " + Name + " event found registered");
+                return;
+            }
+            events[Name].Notify(hp);
+        }
+
+        //public void SubscribeOnce(string)
     }
 }

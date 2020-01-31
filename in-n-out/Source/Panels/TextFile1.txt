@@ -1,0 +1,12 @@
+﻿The event system will be centalized at the top scene level, that is, at MainGameScene, while the individual panes won't have an event emitter. Consequently, event names are prefixed with the name of the corresponding pane before registered. 
+
+So, to add a handler, you would do:
+
+var handler = Handler(YourFunction);
+eventEmitter.Subscribe(EventNames.SamplePane.SampleEventName);
+
+To emit the method you want (being a child pane):
+
+parentScene.eventEmitter.Notify(EventNames.MyPane.MyEventName);
+
+parentScene = e.g. MainGameScene
