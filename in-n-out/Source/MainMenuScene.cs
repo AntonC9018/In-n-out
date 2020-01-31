@@ -11,6 +11,17 @@ namespace Innout.Source
 
         GameComponents gameComponents; //?
 
+        // subscenes
+        Scene craftPane;
+        Scene itemPane;
+        Scene escOverlayPane;
+        Scene questPane;
+        Scene mapPane;
+
+        EventManager eventManager;
+        // GameState gameState
+
+
         SpriteBatch spriteBatch;
         
         public MainMenuScene()
