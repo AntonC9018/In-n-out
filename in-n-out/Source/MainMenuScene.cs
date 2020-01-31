@@ -1,16 +1,21 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Game1.Source
+namespace Innout.Source
 {
     class MainMenuScene : Scene
     {
 
-        GameComponents gameComponents;
 
+        GameComponents gameComponents; //?
+
+        SpriteBatch spriteBatch;
+        
         public MainMenuScene()
         {
+
         }
 
         public void Load(GameComponents gameComponents)
@@ -46,7 +51,7 @@ namespace Game1.Source
 
         public void Draw(GameTime gameTime)
         {
-            
+            spriteBatch.Draw()
         }
     }
 }

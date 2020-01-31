@@ -9,7 +9,7 @@
     <ProjectGuid>{173DB339-ABAD-4930-A1A1-082A5FF703C9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>in_n_out</RootNamespace>
+    <RootNamespace>Innout</RootNamespace>
     <AssemblyName>in-n-out</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>Windows</MonoGamePlatform>
@@ -45,6 +45,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\GameComponents.cs" />
+    <Compile Include="Source\GameObject.cs" />
     <Compile Include="Source\MainMenuScene.cs" />
     <Compile Include="Source\Scene.cs" />
   </ItemGroup>

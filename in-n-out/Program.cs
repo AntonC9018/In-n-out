@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace in_n_out
+namespace Innout
 {
 #if WINDOWS || LINUX
     /// <summary>
@@ -14,7 +14,7 @@ namespace in_n_out
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new Innout())
                 game.Run();
         }
     }
