@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/item.png</File>
+    <File>D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/mainchar.png</File>
+    <File>D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/one.png</File>
+    <File>D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/three.png</File>
+    <File>D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/two.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

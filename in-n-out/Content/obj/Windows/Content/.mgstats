@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/item.png","D:/Coding/C#/In-n-out/in-n-out/Content/bin/Windows/Content/texture2d/item.xnb","TextureProcessor","Texture2DContent",1861,10085,0.2028003
+"D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/mainchar.png","D:/Coding/C#/In-n-out/in-n-out/Content/bin/Windows/Content/texture2d/mainchar.xnb","TextureProcessor","Texture2DContent",1031,10085,0
+"D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/one.png","D:/Coding/C#/In-n-out/in-n-out/Content/bin/Windows/Content/texture2d/one.xnb","TextureProcessor","Texture2DContent",1951,10085,0
+"D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/three.png","D:/Coding/C#/In-n-out/in-n-out/Content/bin/Windows/Content/texture2d/three.xnb","TextureProcessor","Texture2DContent",2299,10085,0
+"D:/Coding/C#/In-n-out/in-n-out/Content/texture2d/two.png","D:/Coding/C#/In-n-out/in-n-out/Content/bin/Windows/Content/texture2d/two.xnb","TextureProcessor","Texture2DContent",2217,10085,0.0156
